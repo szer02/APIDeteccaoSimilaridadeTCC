@@ -1,0 +1,6 @@
+# Ignorar pastas de compilação
+bin/
+obj/
+
+# Ignorar configurações locais com senhas
+appsettings.Development.json
