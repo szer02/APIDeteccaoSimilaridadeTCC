@@ -1,6 +1,6 @@
-# 🕵️‍♂️ Sistema Antiplágio (API de Deteção de Similaridade Textual)
+# 🕵️‍♂️ Sistema Antiplágio (API de Detecção de Similaridade Textual)
 
-API RESTful robusta desenvolvida para análise, comparação e deteção de similaridade em documentos e trabalhos académicos. Focada na garantia da integridade académica, processamento eficiente de texto e rastreabilidade de submissões.
+API RESTful robusta desenvolvida para análise, comparação e detecção de similaridade em documentos e trabalhos académicos. Focada na garantia da integridade académica, processamento eficiente de texto e rastreabilidade de submissões.
 
 ---
 
@@ -11,13 +11,11 @@ API RESTful robusta desenvolvida para análise, comparação e deteção de simi
 * Especialista em Segurança da Informação e Inteligência Artificial
 * Pós Graduando em Engenharia de Dados e IA
 * Mestrando em Ciência da Computação (UFJ)
-* Analista de Suporte
-
 ---
 
 ## 🚀 Visão Geral do Projeto
 
-Esta aplicação atua como um motor de análise textual focado na identificação de potenciais plágios em documentos e código. O sistema gere o ciclo completo de submissão e análise, garantindo a segurança e o processamento através da seguinte hierarquia: **Autenticação Segura -> Submissão de Ficheiro (Upload) -> Processamento Textual (Extração e Limpeza) -> Motor de Deteção (Cálculo de Similaridade) -> Emissão de Resultados.**
+Esta aplicação atua como um motor de análise textual focado na identificação de potenciais plágios em documentos e código. O sistema gere o ciclo completo de submissão e análise, garantindo a segurança e o processamento através da seguinte hierarquia: **Autenticação Segura -> Submissão de Ficheiro (Upload) -> Processamento Textual (Extração e Limpeza) -> Motor de Detecção (Cálculo de Similaridade) -> Emissão de Resultados.**
 
 ### Principais Funcionalidades:
 
@@ -40,7 +38,7 @@ O sistema foi construído utilizando tecnologias modernas do ecossistema Microso
 * **Base de Dados:** SQL Server.
 * **ORM/Micro-ORM:** Utilização conjunta de **Entity Framework Core** (para gestão de estado, migrações e operações estruturadas) e **Dapper** (focado em alta performance para consultas complexas e cruzamento rápido de grandes volumes de texto).
 * **Arquitetura:** Web API estruturada com **Camada de Serviço (Services)** e **Padrão Repository (Repositories)**.
-  * *Por que Repositórios?* Utilizamos o Repository Pattern para desacoplar a lógica de negócio (o motor de deteção) da camada de acesso a dados. Isto facilita a manutenção, permite testes unitários limpos e centraliza as regras de consulta SQL, evitando código duplicado nas lógicas de verificação de similaridade.
+  * *Por que Repositórios?* Utilizamos o Repository Pattern para desacoplar a lógica de negócio (o motor de detecção) da camada de acesso a dados. Isto facilita a manutenção, permite testes unitários limpos e centraliza as regras de consulta SQL, evitando código duplicado nas lógicas de verificação de similaridade.
 * **Documentação Interativa:** Swagger / OpenAPI integrado para testes fluídos dos endpoints.
 
 ---
